@@ -1,0 +1,169 @@
+<html>
+    <head>
+<style>
+.grid {
+    /*  As of August 2012, only supported in Chrome 21+ */
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.25em;
+    font-family: arial, sans-serif;
+}
+.column {
+    background: #f3f3f3;
+}
+.fluid {
+    flex: 1 0 auto;
+    padding: 1em;
+    margin-bottom: 1em;
+    max-width: 30%;
+}
+figure,
+.close {
+    cursor: pointer;
+}
+details > a {
+  display: block;
+  font-style: normal;
+  line-height: 2em;
+}
+.fa {
+  display: inline-block;
+  padding-right: 12px;
+  width: 30px;
+  font-size: 1.75em;
+}
+
+figure {
+  text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+figure > .fa {
+  font-size: 244px;
+  display: block;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.overlay > .fa {
+  font-size: 32px;
+    color: #666;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: white;
+    padding: 0;
+    margin-top: 25%;
+}
+
+.close {
+  font-size: 48px;
+    color: #666;
+    display: block;
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+
+
+</style>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="custom.js"></script>
+
+
+
+    </head>
+
+
+    <body>
+
+    <main class="grid">
+        <article class="column fluid">
+            <figure>
+                <i class="fa fa-picture-o"></i>
+
+                <div class="overlay">
+                    <i class="fa fa-search"></i>
+                </div>
+            </figure>
+            <div class="close" title="Go back to list"><i class="fa fa-times-circle"></i></div>
+            <header><h2>Title Here</h2></header>
+            <details>
+              <p>This is the description. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              <a class="photos" title="View photos" href="index-wrap.html"><i class="fa fa-camera"></i>View Photos</a>
+              <a class="bio" title="View bio" href="http://emc23.com"><i class="fa fa-user"></i>View Bio</a>
+              <a class="more" title="Read more" href="index-new.html"><i class="fa fa-play-circle"></i>Read More</a>
+            </details>
+        </article>
+
+
+        <article class="column fluid">
+            <figure>
+                <i class="fa fa-picture-o"></i>
+
+                <div class="overlay">
+                    <i class="fa fa-search"></i>
+                </div>
+            </figure>
+            <div class="close" title="Go back to list"><i class="fa fa-times-circle"></i></div>
+            <header><h2>Title Here</h2></header>
+            <details>
+              <p>This is the description. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              <a class="photos" title="View photos" href="index-wrap.html"><i class="fa fa-camera"></i>View Photos</a>
+              <a class="bio" title="View bio" href="http://emc23.com"><i class="fa fa-user"></i>View Bio</a>
+              <a class="more" title="Read more" href="index-new.html"><i class="fa fa-play-circle"></i>Read More</a>
+            </details>
+        </article>
+
+
+        <article class="column fluid">
+            <figure>
+                <i class="fa fa-picture-o"></i>
+
+                <div class="overlay">
+                    <i class="fa fa-search"></i>
+                </div>
+            </figure>
+            <div class="close" title="Go back to list"><i class="fa fa-times-circle"></i></div>
+            <header><h2>Title Here</h2></header>
+            <details>
+              <p>This is the description. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              <a class="photos" title="View photos" href="index-wrap.html"><i class="fa fa-camera"></i>View Photos</a>
+              <a class="bio" title="View bio" href="http://emc23.com"><i class="fa fa-user"></i>View Bio</a>
+              <a class="more" title="Read more" href="index-new.html"><i class="fa fa-play-circle"></i>Read More</a>
+            </details>
+        </article>
+
+
+
+    </main>
+    <script
+    			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+    			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    			  crossorigin="anonymous"></script>
+    </body>
+</html>
